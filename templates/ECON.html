@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio page</title>
+    <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet'>
+    <!-- Font Awesome CDN link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+<div class="hero" style="background-image: url('../static/images/econ-bkg.png')">
+    <div class="header-econ">
+        <a href={{url_for('home')}}>
+            <div class="header-image-container">
+                <img src="../static/images/puzzle1.png" alt="piece of puzzle" class="header-image">
+                <span class="menu-text">HOME</span>
+            </div>
+        </a>
+        <a href={{url_for('dev')}}>
+            <div class="header-image-container">
+                <img src="../static/images/puzzle2.png" alt="piece of puzzle" class="header-image">
+                <span class="menu-text1">DEV</span>
+            </div>
+        </a>
+        <a href={{url_for('econ')}}>
+            <div class="header-image-container">
+                <img src="../static/images/puzzle3.png" alt="piece of puzzle" class="header-image">
+                <span class="menu-text3">ECON</span>
+            </div>
+        </a>
+        <a href={{url_for('hobby')}}>
+            <div class="header-image-container">
+                <img src="../static/images/puzzle4.png" alt="piece of puzzle" class="header-image">
+                <span class="menu-text2">HOBBY</span>
+            </div>
+        </a>
+    </div>
+    <div class="econ-container">
+        <div class="econ-section">
+            <img src="../static/images/European_Commission.png" alt="European Commission logo" class="econ-img">
+            <h3 class="econ-heading">Economic Analyst</h3>
+            <ul class="econ-text">
+                <li>Preparing, managing input and presenting various reports and papers within the DG and the
+                    Commission.
+                </li>
+                <li>Preparation of presentations for the OECD ATFC meetings and Expert Group meetings with Member
+                    States’ representatives.
+                </li>
+                <li>Implementing changes to the reports using VBA excel.</li>
+            </ul>
+        </div>
+        <div class="econ-section">
+            <img src="../static/images/UBS-Logo.png" alt="UBS logo" class="econ-img">
+            <h3 class="econ-heading">Trade and processing specialist</h3>
+            <ul class="econ-text">
+                <li>Preparing NOSTRO daily reports on reconciliation of syndicated loans whilst investigating
+                    discrepancies between cash debits and cash credits.
+                </li>
+                <li>Preparing manuals and trainings for new joiners.</li>
+                <li>Actively participating in automation processes – proposing new solutions for more effective work.
+                </li>
+            </ul>
+        </div>
+        <div class="econ-section">
+            <img src="../static/images/Credit-Suisse-Logo.png" alt="Credit Suisse logo" class="econ-img">
+            <h3 class="econ-heading">Junior specialist in research clearance and chaperone</h3>
+            <ul class="econ-text">
+                <li>Reviewing Equity Research Reports and other market publications against reputational and regulatory
+                    issues.
+                </li>
+                <li>Ensuring compliance with international sanctions requirements.</li>
+                <li>Implementing trading and research restrictions in conjunction with Credit Suisse policies.</li>
+                <li>Testing new IT solutions and applications.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <ul class="social-links">
+            <li><a href="https://github.com/marta0907" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/martamaria.aiportraits" target="_blank" class="social-icon"><i
+                    class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/marta-maria-kuta/" target="_blank" class="social-icon"><i
+                    class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,330 @@
+@charset "UTF-8";
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+.hero {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top-center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0px;
+    padding: 20px 0;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 100%;
+    z-index:10;
+}
+
+.header-econ {
+    display: flex;
+    justify-content: flex-end; /* Moves menu to the right */
+    gap: 2px;
+    padding: 20px 20px 0 0; /* Adjust padding for spacing */
+    position: absolute;
+    top: 5px;
+    right: 20px; /* Aligns it to the right */
+    width: auto; /* Prevents stretching */
+    z-index: 10;
+}
+
+.header a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+}
+
+.header-image-container {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 110px;
+    margin-right: -15px;
+}
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.header-image:hover {
+    transform: scale(1.1);
+}
+
+.menu-text {
+    position: absolute;
+    font-family: "Italiana",  Arial, sans-serif;
+    left: 25%;
+    color: #c3394a;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba (0,0,0,0.6);
+    border-radius: 5px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.menu-text1 {
+    position: absolute;
+    font-family: "Italiana",  Arial, sans-serif;
+    color: #77594c;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba (0,0,0,0.6);
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.menu-text3 {
+    position: absolute;
+    font-family: "Italiana",  Arial, sans-serif;
+    color: #644071;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba (0,0,0,0.6);
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.menu-text2 {
+    position: absolute;
+    font-family: "Italiana",  Arial, sans-serif;
+    left: 35%;
+    color: #082d50;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba (0,0,0,0.6);
+    border-radius: 5px;
+    text-align: right;
+    transition: background-color 0.3s ease;
+}
+
+.header-image-container: hover .menu-text {
+    background-color: rgba (0,0,0,0.8)
+}
+
+.heading {
+    color: #082d50;
+    font-size: 4.5rem;
+    font-family: "Italiana",  Arial, sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    padding-left: 10%;
+}
+
+.subheading {
+    color: #133b6b;
+    font-family:'Marcellus', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    width: 33%;
+    overflow: hidden;
+    white-space: normal;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.dev-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 130px 0 50px 2%;
+    gap:50px;
+    padding-left: 5%;
+}
+
+.dev-section {
+    max-width:45%:
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    flex: 1;
+}
+
+.dev-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Limit max size of the images */
+    margin-bottom: 10px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.5)
+}
+
+.dev-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #082d50;
+    font-family: "Italiana",  Arial, sans-serif;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dev-text {
+    width: 100%;
+    font-size: 18px;
+    font-family:'Marcellus', Arial, sans-serif;
+    color: #082d50;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    text-align: justify;
+}
+
+.econ-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns everything to the right */
+    width: 80%; /* Occupies 80% of the page width */
+    margin-left: auto; /* Pushes container to the right */
+    padding-right: 5%; /* Adds spacing from the right edge */
+    gap: 40px;
+}
+
+/* Each section (image + text) */
+.econ-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers image & text within the section */
+    width: 35%; /* Ensures 3 sections fit in one row */
+    text-align: center;
+}
+
+/* Style for images */
+.econ-img {
+    max-width: 100%; /* Makes sure images don't exceed their container */
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Style for text below images */
+.econ-heading {
+    font-size: 22px;
+    font-weight: bold;
+    color: #082d50;
+    font-family: "Italiana",  Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.econ-text {
+    font-size: 15px;
+    font-family:'Marcellus', Arial, sans-serif;
+    color: #082d50;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    width: 100%;
+}
+
+.hobby-container {
+    display: flex;
+    flex-direction: column; /* Stack text above images */
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center;
+    width: 100%; /* Takes full width */
+    padding: 20px 0;
+    text-align: center; /* Centers text */
+}
+
+/* Text above the images */
+.hobby-text {
+    font-size: 17px;
+    font-family:'Marcellus', Arial, sans-serif;
+    color: #082d50;
+    margin-bottom: 20px; /* Adds space between text and images */
+    max-width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+/* Flex container for images */
+.hobby-images {
+    display: flex;
+    justify-content: space-evenly; /* Distributes images evenly across width */
+    width: 90%; /* Ensures the images don't take full width */
+}
+
+/* Style for each image */
+.hobby-img {
+    width: 30%; /* Each image will take up 30% of the container width */
+    height: auto;
+    max-width:400px;
+    object-fit: cover; /* Ensures images cover their space without distortion */
+    border: 8px solid white;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2)
+}
+
+/* Footer style */
+.footer {
+    background: rgba (0,0,0,0.5)
+    padding: 20px 0;
+    text-align: center;
+    color: #14405e;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(-20px);
+}
+
+/* Container for social links */
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for the list of social links */
+.social-links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display icons in a row */
+}
+
+/* Style for individual social link */
+.social-links li {
+    margin: 0 25px; /* Space between icons */
+}
+
+/* Style for the icons */
+.social-icon {
+    color: #082d50;
+    font-size: 3rem; /* Set icon size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.social-icon:hover {
+    color: #5f3f6f; /* Change color on hover
+}
