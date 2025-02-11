@@ -2,7 +2,7 @@ This is a second project from the course "100 Days of Code: The Complete Python 
 The task is to build your own portfolio website.
 
 I used Flask and built this portfolio page in html.
-I didn't include the images of my certificates as they have my personal data on them.
+
 Please see the screenshots below of how the final page looks like.
 
 https://private-user-images.githubusercontent.com/180743587/411919375-5db1c3cd-e196-47cf-9369-53eb3e02e1f1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzkyNjg5ODQsIm5iZiI6MTczOTI2ODY4NCwicGF0aCI6Ii8xODA3NDM1ODcvNDExOTE5Mzc1LTVkYjFjM2NkLWUxOTYtNDdjZi05MzY5LTUzZWIzZTAyZTFmMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxMVQxMDExMjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNDE2YjAzY2U5NzdiNWUzYmYwZGUxZGZmMzM5Yjg0MDAxNjZmZjRlYzg3MTkxNGE5NGZmMWI1NzA0NGMxMDhlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Qr8sMHw95x-_-IlgNYFWx2t2Wm0dODghR78CosMMLwc
