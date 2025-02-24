@@ -1,69 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio page</title>
-    <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet'>
-    <!-- Font Awesome CDN link for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../static/css/styles.css">
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Marta's Portfolio{% endblock %}
+
+{% block content %}
+
 <div class="hero" style="background-image: url('../static/images/hobby-bkg.png')">
-    <div class="header">
-        <a href={{url_for('home')}}>
-            <div class="header-image-container">
-                <img src="../static/images/puzzle1.png" alt="piece of puzzle" class="header-image">
-                <span class="menu-text">HOME</span>
-            </div>
-        </a>
-        <a href={{url_for('dev')}}>
-            <div class="header-image-container">
-                <img src="../static/images/puzzle2.png" alt="piece of puzzle" class="header-image">
-                <span class="menu-text1">DEV</span>
-            </div>
-        </a>
-        <a href={{url_for('econ')}}>
-            <div class="header-image-container">
-                <img src="../static/images/puzzle3.png" alt="piece of puzzle" class="header-image">
-                <span class="menu-text3">ECON</span>
-            </div>
-        </a>
-        <a href={{url_for('hobby')}}>
-            <div class="header-image-container">
-                <img src="../static/images/puzzle4.png" alt="piece of puzzle" class="header-image">
-                <span class="menu-text2">HOBBY</span>
-            </div>
-        </a>
-    </div>
     <div class="hobby-container">
-        <div class="hobby-text">As an AI image creator, I use Midjourney to generate mostly women's portraits. Those are
+        <div class="hobby-text ">As an AI image creator, I use Midjourney to generate mostly women's portraits. Those
+            are
             not just simple portraits, but I try them to be unique in some way. I tend to add smoke and flowers to my
             portraits. When I generate an image that is aligned with my vision of how it should look like, I master it
             in Photoshop, adjusting colours, shapes and sometimes adding more elements to it. Some of the final pieces
             are displayed on my instagram account.
         </div>
         <div class="hobby-images">
+            <section class="hobby-section ">
             <img src="../static/images/photo1.png" alt="AI generated portrait of a woman in flowers" class="hobby-img">
+            </section>
+            <section class="hobby-section ">
             <img src="../static/images/photo2.jpg" alt="AI generated portrait of a woman with head in cloud"
                  class="hobby-img">
+            </section>
+            <section class="hobby-section ">
             <img src="../static/images/photo3.png" alt="AI generated portrait of a woman" class="hobby-img">
+            </section>
         </div>
     </div>
 </div>
-</body>
-<footer class="footer">
-    <div class="footer-container">
-        <ul class="social-links">
-            <li><a href="https://github.com/marta0907" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-            </li>
-            <li><a href="https://www.instagram.com/martamaria.aiportraits" target="_blank" class="social-icon"><i
-                    class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/marta-maria-kuta/" target="_blank" class="social-icon"><i
-                    class="fab fa-linkedin"></i></a></li>
-        </ul>
-    </div>
-</footer>
-</html>
+{% endblock %}

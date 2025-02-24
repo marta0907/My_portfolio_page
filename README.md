@@ -16,3 +16,5 @@ https://private-user-images.githubusercontent.com/180743587/411919574-0f6751ef-3
 If anyone would be willing to help me improve this code I would be very greatful.
 
 Thanks!
+
+Update: now improved to mobile version as well and added video for the main page.

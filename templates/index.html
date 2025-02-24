@@ -1,59 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio page</title>
-    <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet'>
-    <!-- Font Awesome CDN link for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../static/css/styles.css">
-</head>
-<body>
-<div class="hero" style="background-image: url('../static/images/background_main.png')">
-    <div class="header">
-        <a href={{url_for('home')}}>
-            <div class="header-image-container">
-                <img src="../static/images/puzzle1.png" alt="piece of puzzle" class="header-image">
-                <span class="menu-text">HOME</span>
-            </div>
-        </a>
-        <a href={{url_for('dev')}}>
-            <div class="header-image-container">
-                <img src="../static/images/puzzle2.png" alt="piece of puzzle" class="header-image">
-                <span class="menu-text1">DEV</span>
-            </div>
-        </a>
-        <a href={{url_for('econ')}}>
-            <div class="header-image-container">
-                <img src="../static/images/puzzle3.png" alt="piece of puzzle" class="header-image">
-                <span class="menu-text3">ECON</span>
-            </div>
-        </a>
-        <a href={{url_for('hobby')}}>
-            <div class="header-image-container">
-                <img src="../static/images/puzzle4.png" alt="piece of puzzle" class="header-image">
-                <span class="menu-text2">HOBBY</span>
-            </div>
-        </a>
-    </div>
-    <h1 class="heading">Marta's Portfolio</h1>
-    <span class="subheading">The knowledge I've collected isn't just random bits - it consists of puzzle pieces that shaped the person I am today</span>
+{% extends 'base.html' %}
 
+{% block title %}Marta's Portfolio{% endblock %}
+
+{% block content %}
+<div class="hero-main">
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="{{ url_for('static', filename='images/MyPortfolioVid.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+        <h1 class="heading">Marta's Portfolio</h1>
+        <span class="subheading">The knowledge I've collected throughout the years, isn't just random bits - it consists of puzzle pieces that shaped the person I am today</span>
+    </div>
 </div>
-
-</body>
-<footer class="footer">
-    <div class="footer-container">
-        <ul class="social-links">
-            <li><a href="https://github.com/marta0907" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-            </li>
-            <li><a href="https://www.instagram.com/martamaria.aiportraits" target="_blank" class="social-icon"><i
-                    class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/marta-maria-kuta/" target="_blank" class="social-icon"><i
-                    class="fab fa-linkedin"></i></a></li>
-        </ul>
-    </div>
-</footer>
-</html>
+{% endblock %}
